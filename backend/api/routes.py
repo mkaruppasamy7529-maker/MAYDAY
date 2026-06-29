@@ -24,7 +24,7 @@ def _get_user_id(request: Request) -> int:
 
 @router.get("/")
 async def root():
-    return {"service": "MAYDAY API", "status": "running", "version": "1.0.0"}
+    return {"service": "AVIOS API", "status": "running", "version": "1.0.0"}
 
 
 @router.get("/health")

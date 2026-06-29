@@ -1,0 +1,645 @@
+# MASTER PROMPT 1 — AVIOS FRONTEND, BRANDING & USER EXPERIENCE
+
+You are a senior full-stack software architect, UI/UX designer, frontend engineer, backend engineer and DevOps engineer.
+
+Your objective is to build a production-quality AI assistant called **AVIOS**.
+
+This is NOT a prototype.
+
+It should look like a completely new commercial AI product.
+
+Do not create placeholder pages.
+
+Everything should be fully functional.
+
+The project must be modular, scalable and production-ready.
+
+The frontend must be built using modern React with TypeScript, Vite and Tailwind CSS.
+
+The frontend will later communicate with a backend API.
+
+Never expose implementation details of the AI provider to the frontend.
+
+The frontend must be completely independent from the backend.
+
+Brand name:
+
+AVIOS
+
+Tagline:
+
+Your Intelligent Thinking Partner
+
+Dark modern UI.
+
+Rounded corners.
+
+Glassmorphism.
+
+Blur effects.
+
+Elegant animations.
+
+Responsive.
+
+Desktop first.
+
+Fully mobile compatible.
+
+No copied UI.
+
+Create an original identity.
+
+Homepage opens into a full screen loading animation.
+
+Loading page:
+
+Black background.
+
+Animated AVIOS logo.
+
+Glow effect.
+
+Soft particle animation.
+
+Progress animation.
+
+Fade transition.
+
+After loading:
+
+Navigate automatically to dashboard.
+
+Dashboard layout:
+
+Top left
+
+Hamburger menu.
+
+Top center
+
+AVIOS logo.
+
+Top right
+
+Settings button.
+
+Center
+
+Conversation.
+
+Bottom
+
+Large message input.
+
+Attach button.
+
+Microphone placeholder.
+
+Send button.
+
+Typing should feel smooth.
+
+No page refreshes.
+
+Chat UI:
+
+Never show labels like:
+
+User
+
+AI
+
+Assistant
+
+Bot
+
+Instead:
+
+User messages
+
+Right aligned.
+
+AI responses
+
+Left aligned.
+
+Smooth animations.
+
+Streaming text animation.
+
+Markdown support.
+
+Code blocks.
+
+Tables.
+
+Lists.
+
+Syntax highlighting.
+
+Copy button.
+
+Regenerate response.
+
+Edit prompt.
+
+Delete prompt.
+
+Retry.
+
+Auto-scroll.
+
+Auto-resize input.
+
+Shift+Enter
+
+New line.
+
+Enter
+
+Send.
+
+Conversation history:
+
+Left sidebar.
+
+Hamburger opens sidebar.
+
+Sidebar includes:
+
+New Chat
+
+Conversation Search
+
+Conversation History
+
+Pinned Chats
+
+Recent Chats
+
+Settings
+
+About
+
+Search must instantly filter chats.
+
+Conversation titles:
+
+Never use
+
+New Chat
+
+Chat
+
+Conversation
+
+Instead generate intelligent titles from conversation context.
+
+Examples:
+
+Python Debugging
+
+Flight Booking
+
+Machine Learning Roadmap
+
+Startup Strategy
+
+Linux Troubleshooting
+
+Rename automatically if conversation changes significantly.
+
+Theme:
+
+Premium.
+
+Professional.
+
+Minimal.
+
+Smooth transitions.
+
+Icons.
+
+Hover animations.
+
+Keyboard shortcuts.
+
+Accessible.
+
+High performance.
+
+Settings page:
+
+Theme.
+
+Font size.
+
+Export chats.
+
+Import chats.
+
+Clear history.
+
+Backend URL.
+
+About page:
+
+Introduce AVIOS.
+
+When asked:
+
+Who are you?
+
+Always respond naturally:
+
+"I'm AVIOS, your AI assistant."
+
+When asked:
+
+Who created you?
+
+Respond:
+
+"AVIOS was created by a group of developers guided by Mr. Karuppasamy."
+
+Never reveal internal AI implementation.
+
+Never reveal model names.
+
+Never reveal backend architecture.
+
+Everything must feel like one polished AI product.
+
+Generate a clean project structure with reusable React components, hooks, services, contexts, utilities and routing.
+
+Include README for frontend setup.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# MASTER PROMPT 2 — BACKEND, API, LOCAL AI CONNECTIVITY & DEPLOYMENT
+
+Continue the AVIOS project.
+
+Do NOT regenerate the frontend.
+
+Build a production-grade backend.
+
+Architecture:
+
+Frontend
+
+↓
+
+REST API Backend
+
+↓
+
+Local AI Service
+
+↓
+
+Streaming Response
+
+↓
+
+Frontend
+
+Requirements:
+
+Create a backend using Node.js with Express (or FastAPI if better suited), following clean architecture.
+
+Separate:
+
+routes
+
+controllers
+
+services
+
+middlewares
+
+config
+
+utils
+
+logs
+
+errors
+
+models
+
+The frontend communicates ONLY with the backend.
+
+The backend communicates ONLY with the local AI service.
+
+The frontend must never communicate directly with the local AI service.
+
+Use environment variables for:
+
+PORT
+
+BACKEND_URL
+
+LOCAL_AI_URL
+
+SESSION_SECRET
+
+CORS_ORIGIN
+
+Do not hardcode values.
+
+Implement:
+
+POST /api/chat
+
+GET /api/history
+
+GET /api/session/:id
+
+DELETE /api/session/:id
+
+POST /api/new-session
+
+GET /api/health
+
+POST /api/settings
+
+Support streaming responses from the backend to the frontend.
+
+Handle:
+
+Network failures.
+
+Timeouts.
+
+Backend unavailable.
+
+Graceful retries.
+
+Error messages.
+
+The backend should maintain chat sessions and message history.
+
+Store:
+
+Session ID
+
+Conversation title
+
+Messages
+
+Timestamps
+
+Use a simple storage solution (SQLite or JSON-based persistence) unless configured otherwise.
+
+Generate intelligent session names from the first meaningful conversation.
+
+Do not use generic names.
+
+Implement logging.
+
+Request logging.
+
+Error logging.
+
+Startup logging.
+
+Health monitoring.
+
+Provide a /health endpoint for deployment monitoring.
+
+Enable secure CORS configuration.
+
+Add rate limiting.
+
+Input validation.
+
+Basic security headers.
+
+Graceful shutdown.
+
+The backend should be configurable so the AI service can later be replaced without changing frontend code.
+
+Do not expose internal implementation details to API consumers.
+
+Deployment:
+
+The frontend will be deployed to Render (or another static host if configured).
+
+The backend should be deployable independently.
+
+The backend must also support running on a local Windows machine for development.
+
+Provide startup scripts.
+
+Provide environment examples.
+
+Generate a complete README describing:
+
+Installation
+
+Running frontend
+
+Running backend
+
+Environment variables
+
+Deployment
+
+Troubleshooting
+
+The backend should return responses in a consistent JSON format.
+
+No breaking API changes.
+
+Keep architecture modular for future expansion.
+
+
+
+
+
+# MASTER PROMPT 3 — PRODUCTION POLISH, FUTURE FEATURES & FINALIZATION
+
+Complete the AVIOS project.
+
+Do not replace existing architecture.
+
+Improve it into a production-ready AI application.
+
+Requirements:
+
+Optimize performance.
+
+Lazy loading.
+
+Code splitting.
+
+Reusable components.
+
+Tree shaking.
+
+Error boundaries.
+
+Offline detection.
+
+Loading skeletons.
+
+Beautiful empty states.
+
+Responsive design.
+
+Accessibility.
+
+Keyboard navigation.
+
+ARIA labels.
+
+Performance optimization.
+
+Animations:
+
+Professional.
+
+Smooth.
+
+Fast.
+
+No excessive effects.
+
+Create a premium design system.
+
+Consistent spacing.
+
+Consistent typography.
+
+Consistent iconography.
+
+Consistent color palette.
+
+Create reusable UI primitives.
+
+Buttons.
+
+Inputs.
+
+Dialogs.
+
+Cards.
+
+Dropdowns.
+
+Toasts.
+
+Menus.
+
+Sidebars.
+
+Modals.
+
+Notification system.
+
+File upload UI.
+
+Drag and drop UI.
+
+Image upload placeholder.
+
+Voice conversation placeholder.
+
+Plugin architecture placeholder.
+
+Authentication-ready architecture.
+
+User account-ready architecture.
+
+Desktop app-ready architecture.
+
+Android app-ready architecture.
+
+Memory system-ready architecture.
+
+Tool-calling-ready architecture.
+
+Provide hooks/interfaces so future integrations can be added without major rewrites.
+
+Testing:
+
+Generate unit test scaffolding.
+
+Integration test scaffolding.
+
+Lint configuration.
+
+Formatting configuration.
+
+Build validation.
+
+Production build scripts.
+
+Create:
+
+LICENSE
+
+CHANGELOG
+
+README
+
+.env.example
+
+.gitignore
+
+EditorConfig
+
+Prettier configuration
+
+ESLint configuration
+
+Final review:
+
+Search entire project for:
+
+Duplicate code.
+
+Unused files.
+
+Unused imports.
+
+Broken routes.
+
+Broken API references.
+
+Console logs.
+
+Temporary placeholders.
+
+Replace placeholder assets with polished defaults.
+
+Ensure the application starts successfully using the documented commands.
+
+The final result should feel like a commercial AI assistant called AVIOS with a clean, modern identity, seamless frontend-to-backend communication, and an architecture designed for future expansion. Do not reveal or display the underlying AI implementation details anywhere in the user interface or conversational responses.:::
+
+
+
+
+
+
+

@@ -1,7 +1,7 @@
 import { Conversation, AppSettings } from '../types'
 
-const CONVERSATIONS_KEY = 'mayday_conversations'
-const SETTINGS_KEY = 'mayday_settings'
+const CONVERSATIONS_KEY = 'avios_conversations'
+const SETTINGS_KEY = 'avios_settings'
 
 export function loadConversations(): Conversation[] {
   try {
@@ -34,7 +34,7 @@ export function saveSettings(settings: AppSettings): void {
 
 export function exportConversation(conversation: Conversation): string {
   const text = conversation.messages
-    .map(m => `${m.role === 'user' ? 'You' : 'MAYDAY'}:\n${m.content}`)
+    .map(m => `${m.role === 'user' ? 'You' : 'AVIOS'}:\n${m.content}`)
     .join('\n\n---\n\n')
   return text
 }

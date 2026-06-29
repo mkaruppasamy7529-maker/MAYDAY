@@ -1,15 +1,15 @@
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
 
 function authHeaders(): Record<string, string> {
-  const token = localStorage.getItem('mayday_token')
+  const token = localStorage.getItem('avios_token')
   const headers: Record<string, string> = { 'Content-Type': 'application/json' }
   if (token) headers['Authorization'] = `Bearer ${token}`
   return headers
 }
 
 function forceLogout() {
-  localStorage.removeItem('mayday_token')
-  localStorage.setItem('mayday_logout', Date.now().toString())
+  localStorage.removeItem('avios_token')
+  localStorage.setItem('avios_logout', Date.now().toString())
   window.location.href = '/'
 }
 

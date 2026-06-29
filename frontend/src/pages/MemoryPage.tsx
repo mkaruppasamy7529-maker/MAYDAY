@@ -82,7 +82,7 @@ export default function MemoryPage() {
           <div className="text-center py-12">
             <p className="text-4xl mb-3">\uD83E\uDDE0</p>
             <p className="text-gray-500 text-sm">No memories stored yet.</p>
-            <p className="text-gray-600 text-xs mt-1">MAYDAY will remember things you teach it.</p>
+            <p className="text-gray-600 text-xs mt-1">AVIOS will remember things you teach it.</p>
           </div>
         ) : (
           <div className="space-y-2">

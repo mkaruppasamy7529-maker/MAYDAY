@@ -181,7 +181,7 @@ export function ChatProvider({ children }: { children: ReactNode }) {
   const exportConversation = useCallback((id: string): string => {
     const conv = conversations.find(c => c.id === id)
     if (!conv) return ''
-    return conv.messages.map(m => `${m.role === 'user' ? 'You' : 'MAYDAY'}:\n${m.content}`).join('\n\n---\n\n')
+    return conv.messages.map(m => `${m.role === 'user' ? 'You' : 'AVIOS'}:\n${m.content}`).join('\n\n---\n\n')
   }, [conversations])
 
   const importConversation = useCallback((data: Conversation) => {

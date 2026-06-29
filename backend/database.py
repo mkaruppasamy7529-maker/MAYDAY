@@ -111,8 +111,8 @@ def init_db():
     except sqlite3.OperationalError:
         pass
 
-    admin_email = os.environ.get("MAYDAY_ADMIN_EMAIL", "").strip()
-    admin_password = os.environ.get("MAYDAY_ADMIN_PASSWORD", "").strip()
+    admin_email = os.environ.get("AVIOS_ADMIN_EMAIL", "").strip()
+    admin_password = os.environ.get("AVIOS_ADMIN_PASSWORD", "").strip()
     if admin_email and admin_password:
         cursor = conn.execute("SELECT id FROM users WHERE email = ?", (admin_email,))
         if not cursor.fetchone():

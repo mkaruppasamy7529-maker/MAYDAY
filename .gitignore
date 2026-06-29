@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.vite/
+*.log
+.env
+backend/data/
+backend/__pycache__/
+backend/**/__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+desktop.ini
+logs/
+*.tsbuildinfo

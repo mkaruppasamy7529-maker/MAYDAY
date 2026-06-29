@@ -44,8 +44,8 @@ async def api_register(request: Request):
             verification_token = secrets.token_urlsafe(32)
             update_user(user["id"], {"verification_token": verification_token})
             verify_link = f"{settings.app_base_url}/verify-email?token={verification_token}"
-            send_email(email, "Verify your MAYDAY account",
-                f"Hi {name},\n\nPlease verify your email by clicking:\n{verify_link}\n\nThanks,\nMAYDAY Team")
+            send_email(email, "Verify your AVIOS account",
+                f"Hi {name},\n\nPlease verify your email by clicking:\n{verify_link}\n\nThanks,\nAVIOS Team")
         except Exception as e:
             logger.warning(f"Failed to send verification email: {e}")
 
@@ -162,8 +162,8 @@ async def api_forgot_password(request: Request):
     if settings.smtp_host:
         reset_link = f"{settings.app_base_url}/reset-password?token={reset_token}"
         try:
-            send_email(email, "Reset your MAYDAY password",
-                f"Hi {user['name']},\n\nReset your password by clicking:\n{reset_link}\n\nThis link expires in 1 hour.\n\nThanks,\nMAYDAY Team")
+            send_email(email, "Reset your AVIOS password",
+                f"Hi {user['name']},\n\nReset your password by clicking:\n{reset_link}\n\nThis link expires in 1 hour.\n\nThanks,\nAVIOS Team")
         except Exception as e:
             logger.warning(f"Failed to send reset email: {e}")
 

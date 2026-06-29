@@ -9,13 +9,13 @@ export default function AboutPage() {
       <div className="max-w-lg w-full relative">
         <div className="backdrop-blur-xl bg-white/[0.03] rounded-2xl border border-white/[0.06] p-8 shadow-2xl text-center">
           <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-cyan-500/20 to-blue-500/20 flex items-center justify-center mx-auto mb-4 ring-1 ring-cyan-500/20">
-            <span className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">M</span>
+            <span className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">A</span>
           </div>
-          <h1 className="text-3xl font-bold text-white mb-2">MAYDAY</h1>
+          <h1 className="text-3xl font-bold text-white mb-2">AVIOS</h1>
           <p className="text-cyan-400 text-sm mb-6">Your Personal AI Assistant</p>
 
           <p className="text-gray-400 text-sm leading-relaxed mb-6">
-            MAYDAY is an intelligent personal AI assistant built with a focus on usability, 
+            AVIOS is an intelligent personal AI assistant built with a focus on usability, 
             privacy, speed, and a modern user experience. It leverages cutting-edge AI technology 
             to help you solve problems, learn, create, and explore ideas.
           </p>

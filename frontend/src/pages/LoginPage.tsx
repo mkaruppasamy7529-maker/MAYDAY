@@ -23,9 +23,9 @@ export default function LoginPage() {
       <div className="w-full max-w-sm relative">
         <div className="text-center mb-8">
           <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-cyan-500/20 to-blue-500/20 flex items-center justify-center mx-auto mb-4 ring-1 ring-cyan-500/20">
-            <span className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">M</span>
+            <span className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">A</span>
           </div>
-          <h1 className="text-3xl font-bold text-white tracking-tight">MAYDAY</h1>
+          <h1 className="text-3xl font-bold text-white tracking-tight">AVIOS</h1>
           <p className="text-gray-500 text-sm mt-1">Your Personal AI Assistant</p>
         </div>
         <form onSubmit={handleSubmit} className="backdrop-blur-xl bg-white/[0.03] rounded-2xl p-6 border border-white/[0.06] space-y-4 shadow-2xl">

@@ -1,0 +1,38 @@
+services:
+  - type: web
+    name: avios-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    disk:
+      name: avios-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: PRODUCTION
+        value: "true"
+      - key: DATABASE_URL
+        value: /var/data/avios.db
+      - key: CORS_ORIGINS
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: AI_PROVIDER
+        value: ollama
+      - key: OLLAMA_URL
+        sync: false
+      - key: OLLAMA_MODEL
+        value: llama3.2:latest
+      - key: SMTP_HOST
+        sync: false
+      - key: SMTP_PORT
+        value: 587
+      - key: SMTP_USER
+        sync: false
+      - key: SMTP_PASSWORD
+        sync: false
+      - key: SMTP_FROM_EMAIL
+        value: noreply@avios.ai
+      - key: APP_BASE_URL
+        sync: false

@@ -25,7 +25,7 @@ class Settings(BaseSettings):
     daily_message_limit: int = 100
 
     # JWT
-    jwt_secret: str = "mayday-jwt-secret-change-in-production"
+    jwt_secret: str = "avios-jwt-secret-change-in-production"
     jwt_algorithm: str = "HS256"
     jwt_expire_minutes: int = 1440
 
@@ -34,7 +34,7 @@ class Settings(BaseSettings):
     smtp_port: int = 587
     smtp_user: str = ""
     smtp_password: str = ""
-    smtp_from_email: str = "noreply@mayday.ai"
+    smtp_from_email: str = "noreply@avios.ai"
     app_base_url: str = "http://localhost:5173"
 
     model_config = {"env_file": ".env", "env_file_encoding": "utf-8", "extra": "ignore"}
@@ -46,4 +46,4 @@ settings = Settings()
 if not settings.database_url:
     db_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
     os.makedirs(db_dir, exist_ok=True)
-    settings.database_url = os.path.join(db_dir, "mayday.db")
+    settings.database_url = os.path.join(db_dir, "avios.db")

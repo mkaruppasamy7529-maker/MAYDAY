@@ -16,8 +16,8 @@ interface AuthContextValue {
 
 const AuthContext = createContext<AuthContextValue | null>(null)
 
-const TOKEN_KEY = 'mayday_token'
-const LOGOUT_EVENT = 'mayday_logout'
+const TOKEN_KEY = 'avios_token'
+const LOGOUT_EVENT = 'avios_logout'
 
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null)

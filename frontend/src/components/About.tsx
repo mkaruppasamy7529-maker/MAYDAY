@@ -10,8 +10,8 @@ export default function About({ onClose }: Props) {
         className="glass rounded-2xl border border-white/5 w-full max-w-lg mx-4" onClick={e => e.stopPropagation()}>
         <div className="flex items-center justify-between p-5 border-b border-white/5">
           <h2 className="text-lg font-semibold">
-            <span className="text-gradient">MAY</span>
-            <span className="text-white/60">DAY</span>
+            <span className="text-gradient">AVI</span>
+            <span className="text-white/60">OS</span>
           </h2>
           <button onClick={onClose} className="p-1 rounded-lg hover:bg-white/5 text-gray-400 hover:text-white transition-all">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
@@ -20,10 +20,10 @@ export default function About({ onClose }: Props) {
 
         <div className="p-5 space-y-4">
           <p className="text-sm text-gray-300 leading-relaxed">
-            MAYDAY is Your Intelligent Thinking Partner — an AI assistant designed to help with information, reasoning, coding, learning, and everyday tasks.
+            AVIOS is Your Intelligent Thinking Partner — an AI assistant designed to help with information, reasoning, coding, learning, and everyday tasks.
           </p>
           <p className="text-sm text-gray-500 leading-relaxed">
-            MAYDAY was created by a group of developers guided by Mr. Karuppasamy.
+            AVIOS was created by a group of developers guided by Mr. Karuppasamy.
           </p>
 
           <div>

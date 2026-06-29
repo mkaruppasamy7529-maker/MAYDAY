@@ -30,7 +30,7 @@ export default function Sidebar() {
     const blob = new Blob([text], { type: 'text/plain' })
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
-    a.href = url; a.download = `mayday-conversation-${id.slice(0, 8)}.txt`
+    a.href = url; a.download = `avios-conversation-${id.slice(0, 8)}.txt`
     a.click()
     URL.revokeObjectURL(url)
     showToast('Conversation exported')
@@ -50,8 +50,8 @@ export default function Sidebar() {
             <div className="flex items-center justify-between p-4 border-b border-white/5">
               <div className="flex items-center gap-2">
                 <span className="text-xl font-bold">
-                  <span className="text-gradient">MAY</span>
-                  <span className="text-white/60">DAY</span>
+                  <span className="text-gradient">AVI</span>
+                  <span className="text-white/60">OS</span>
                 </span>
               </div>
               <button onClick={() => setSidebarOpen(false)} className="p-1.5 rounded-lg hover:bg-white/5 transition-colors text-gray-400 hover:text-white" aria-label="Close sidebar">
@@ -91,7 +91,7 @@ export default function Sidebar() {
               </button>
               <button onClick={() => { setShowAbout(true); setSidebarOpen(false) }} className="w-full flex items-center gap-2 p-2.5 rounded-lg text-sm text-gray-400 hover:text-white hover:bg-white/5 transition-all">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
-                About MAYDAY
+                About AVIOS
               </button>
             </div>
           </motion.aside>

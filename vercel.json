@@ -3,9 +3,6 @@
   "framework": "vite",
   "buildCommand": "vite build",
   "outputDirectory": "dist",
-  "env": {
-    "VITE_API_URL": "https://smithsonian-personalized-forward-namespace.trycloudflare.com"
-  },
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]

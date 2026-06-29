@@ -35,7 +35,7 @@ export default function AdminPage() {
   }, [])
   useEffect(() => {
     const onStorage = (e: StorageEvent) => {
-      if (e.key === 'mayday_logout' || e.key === 'mayday_token') load()
+      if (e.key === 'avios_logout' || e.key === 'avios_token') load()
     }
     window.addEventListener('storage', onStorage)
     return () => window.removeEventListener('storage', onStorage)
@@ -64,7 +64,7 @@ export default function AdminPage() {
     try {
       const res = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:8000'}/api/admin/users/${suspend.userId}/suspend`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${localStorage.getItem('mayday_token')}` },
+        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${localStorage.getItem('avios_token')}` },
         body,
       })
       const data = await res.json()
@@ -84,7 +84,7 @@ export default function AdminPage() {
     try {
       const res = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:8000'}/api/admin/users/${limitEdit.userId}/limit`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${localStorage.getItem('mayday_token')}` },
+        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${localStorage.getItem('avios_token')}` },
         body: JSON.stringify({ limit: val }),
       })
       const data = await res.json()

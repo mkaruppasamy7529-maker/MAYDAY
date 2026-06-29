@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useChat } from '../contexts/ChatContext'
 import MessageBubble from './MessageBubble'
 import InputArea from './InputArea'
+import LogoIcon from './LogoIcon'
 
 export default function ChatArea() {
   const { conversations, currentId, isGenerating, sendMessage } = useChat()
@@ -23,11 +24,11 @@ export default function ChatArea() {
     return (
       <div className="flex-1 flex items-center justify-center px-4">
         <div className="text-center">
-          <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-cyan-500/20 to-blue-500/20 flex items-center justify-center mx-auto mb-4 ring-1 ring-cyan-500/20">
-            <span className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">M</span>
+          <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-indigo-500/20 to-purple-500/20 flex items-center justify-center mx-auto mb-4 ring-1 ring-indigo-500/20">
+            <LogoIcon size={36} animated />
           </div>
           <h2 className="text-xl font-semibold text-gray-300 mb-2">How can I help you today?</h2>
-          <p className="text-sm text-gray-500 max-w-md">I'm MAYDAY, Your Personal AI Assistant. Start a conversation to get started.</p>
+          <p className="text-sm text-gray-500 max-w-md">I'm AVIOS, Your Personal AI Assistant. Start a conversation to get started.</p>
         </div>
       </div>
     )
@@ -39,10 +40,10 @@ export default function ChatArea() {
         <div className="max-w-3xl mx-auto space-y-6">
           {messages.length === 0 && (
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center py-12">
-              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-cyan-500/20 to-blue-500/20 flex items-center justify-center mx-auto mb-4 ring-1 ring-cyan-500/20">
-                <span className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">M</span>
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-indigo-500/20 to-purple-500/20 flex items-center justify-center mx-auto mb-4 ring-1 ring-indigo-500/20">
+<LogoIcon size={36} animated />
               </div>
-              <h2 className="text-xl font-semibold text-gray-300 mb-2">Hello. I'm MAYDAY.</h2>
+              <h2 className="text-xl font-semibold text-gray-300 mb-2">Hello. I'm AVIOS.</h2>
               <p className="text-sm text-gray-500">Your Personal AI Assistant. How can I help you today?</p>
             </motion.div>
           )}
@@ -61,10 +62,12 @@ export default function ChatArea() {
 
           {isGenerating && messages[messages.length - 1]?.role === 'user' && (
             <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="flex gap-3">
-              <div className="w-8 h-8 rounded-full bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center text-xs font-bold text-white flex-shrink-0 shadow-lg shadow-cyan-500/20">M</div>
+              <div className="w-8 h-8 rounded-full bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center flex-shrink-0 shadow-lg shadow-indigo-500/20">
+                <LogoIcon size={16} />
+              </div>
               <div className="px-4 py-3 rounded-2xl bg-white/[0.03] border border-white/[0.06] rounded-tl-md">
                 <div className="flex items-center gap-1.5">
-                  <span className="text-xs text-cyan-400/70 italic">MAYDAY is thinking</span>
+                  <span className="text-xs text-cyan-400/70 italic">AVIOS is thinking</span>
                   <span className="flex gap-1">
                     <span className="w-1.5 h-1.5 bg-cyan-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
                     <span className="w-1.5 h-1.5 bg-cyan-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />

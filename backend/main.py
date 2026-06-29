@@ -23,16 +23,16 @@ logger = logging.getLogger(__name__)
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     init_db()
-    logger.info("MAYDAY API v2.0.0 starting up")
+    logger.info("AVIOS API v2.0.0 starting up")
     logger.info(f"Mode: {'production' if settings.production else 'development'}")
     logger.info(f"CORS origins: {settings.cors_origins}")
     logger.info(f"AI Provider: {settings.ai_provider}")
     logger.info(f"Database: {settings.database_url}")
     yield
-    logger.info("MAYDAY API shutting down gracefully")
+    logger.info("AVIOS API shutting down gracefully")
 
 
-app = FastAPI(title="MAYDAY API", version="2.0.0", lifespan=lifespan)
+app = FastAPI(title="AVIOS API", version="2.0.0", lifespan=lifespan)
 
 setup_cors(app, settings.cors_origins)
 app.add_middleware(RateLimitMiddleware)

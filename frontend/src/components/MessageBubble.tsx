@@ -7,6 +7,7 @@ import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { Message } from '../types'
 import { useChat } from '../contexts/ChatContext'
 import { useStreamingAnimation } from '../hooks/useStreamingAnimation'
+import LogoIcon from './LogoIcon'
 
 interface Props {
   message: Message
@@ -52,7 +53,7 @@ export default function MessageBubble({ message, convId, isStreaming, onRegenera
             <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
           </svg>
         ) : (
-          <span className="text-sm font-bold text-gradient">M</span>
+          <LogoIcon size={16} />
         )}
       </div>
 

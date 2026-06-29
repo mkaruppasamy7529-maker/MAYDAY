@@ -61,7 +61,7 @@ export default function InputArea() {
               value={input}
               onChange={e => { setInput(e.target.value); adjustHeight() }}
               onKeyDown={e => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); handleSubmit() } }}
-              placeholder={isOffline ? "You're offline — reconnect to chat" : "Ask MAYDAY anything..."}
+              placeholder={isOffline ? "You're offline — reconnect to chat" : "Ask AVIOS anything..."}
               rows={1}
               disabled={isGenerating || isOffline}
               className="flex-1 bg-transparent text-sm text-gray-100 placeholder-gray-500 resize-none outline-none max-h-[200px] disabled:opacity-50"
