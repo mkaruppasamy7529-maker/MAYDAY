@@ -4,7 +4,7 @@
   "buildCommand": "vite build",
   "outputDirectory": "dist",
   "env": {
-    "VITE_API_URL": "https://yrs-fix-funk-competing.trycloudflare.com"
+    "VITE_API_URL": "http://localhost:8001"
   },
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
