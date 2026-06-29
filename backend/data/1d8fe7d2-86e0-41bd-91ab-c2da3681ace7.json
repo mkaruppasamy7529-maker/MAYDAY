@@ -1,0 +1,13 @@
+{
+  "id": "1d8fe7d2-86e0-41bd-91ab-c2da3681ace7",
+  "title": "New conversation",
+  "messages": [],
+  "createdAt": "2026-06-28T16:11:29.802197",
+  "updatedAt": "2026-06-28T16:11:29.802208",
+  "pinned": false,
+  "settings": {
+    "theme": "dark",
+    "fontSize": "base",
+    "temperature": 0.7
+  }
+}

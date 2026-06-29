@@ -1,0 +1,26 @@
+{
+  "id": "cd9b66f7-94e8-4030-9cd3-7f8777a6b7b6",
+  "title": "How can I assist you today?",
+  "messages": [
+    {
+      "id": "3122dc8d-dd20-440b-9c43-2342ac0d533e",
+      "role": "user",
+      "content": "hii",
+      "timestamp": "2026-06-29T06:03:33.340723"
+    },
+    {
+      "id": "be6afce9-7e3c-49a6-a6c5-c18b7d575d68",
+      "role": "assistant",
+      "content": "I'm MAYDAY, your AI assistant. How can I help you today?",
+      "timestamp": "2026-06-29T06:03:59.850866"
+    }
+  ],
+  "createdAt": "2026-06-29T06:03:33.338517",
+  "updatedAt": "2026-06-29T06:04:15.251854",
+  "pinned": false,
+  "settings": {
+    "theme": "dark",
+    "fontSize": "base",
+    "temperature": 0.7
+  }
+}

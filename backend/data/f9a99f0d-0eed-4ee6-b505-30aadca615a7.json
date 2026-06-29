@@ -1,0 +1,38 @@
+{
+  "id": "f9a99f0d-0eed-4ee6-b505-30aadca615a7",
+  "title": "Welcome. How can I assist you today?",
+  "messages": [
+    {
+      "id": "9dfaa4a2-d25f-4611-b74f-66aeb7f5f335",
+      "role": "user",
+      "content": "hi",
+      "timestamp": "2026-06-29T06:12:40.944795"
+    },
+    {
+      "id": "39dd1a8c-bba7-4c0f-8aea-54e55a98603e",
+      "role": "assistant",
+      "content": "Hi! How can I help you today?",
+      "timestamp": "2026-06-29T06:13:05.426488"
+    },
+    {
+      "id": "95153ae6-ad53-4547-ab67-ac29e2a67062",
+      "role": "user",
+      "content": "who are you and who created you",
+      "timestamp": "2026-06-29T06:13:24.301975"
+    },
+    {
+      "id": "45b95369-12b0-4836-ada7-e3847260cf34",
+      "role": "assistant",
+      "content": "I'm MAYDAY, your AI assistant. \nI was created by a group of talented developers guided by Mr. Karuppasamy \u2014 a brilliant developer with great vision.",
+      "timestamp": "2026-06-29T06:13:30.928347"
+    }
+  ],
+  "createdAt": "2026-06-29T06:12:37.807310",
+  "updatedAt": "2026-06-29T06:13:30.928783",
+  "pinned": false,
+  "settings": {
+    "theme": "dark",
+    "fontSize": "base",
+    "temperature": 0.7
+  }
+}

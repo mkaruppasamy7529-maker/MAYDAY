@@ -1,0 +1,22 @@
+INFO:     127.0.0.1:58869 - "GET /api/health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58881 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58883 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56658 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56658 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+ INFO:     127.0.0.1:49935 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49935 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51148 - "OPTIONS /api/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51148 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54787 - "POST /api/new-session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64103 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64103 - "POST /api/chat HTTP/1.1" 200 OK
+ INFO:     127.0.0.1:62959 - "POST /api/new-session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62959 - "OPTIONS /api/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63655 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49670 - "POST /api/chat HTTP/1.1" 200 OK
+  INFO:     127.0.0.1:54281 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58937 - "POST /api/register HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:58943 - "POST /api/register HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53116 - "POST /api/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53118 - "GET /api/admin/users HTTP/1.1" 200 OK
+   

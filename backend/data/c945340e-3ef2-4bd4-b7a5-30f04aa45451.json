@@ -1,0 +1,38 @@
+{
+  "id": "c945340e-3ef2-4bd4-b7a5-30f04aa45451",
+  "title": "How can I assist you today?",
+  "messages": [
+    {
+      "id": "1a548a8a-3b65-4ec9-abbd-04ec085c45e2",
+      "role": "user",
+      "content": "hiii",
+      "timestamp": "2026-06-29T06:03:57.109640"
+    },
+    {
+      "id": "18c0261c-1804-4171-98fa-6266b3b79cd3",
+      "role": "assistant",
+      "content": "Hiiii! It's great to see you again! How can I assist you today? We didn't quite finish our last conversation, did we? Is there something specific on your mind that you'd like to discuss or a problem you're trying to solve? I'm all ears and here to help.",
+      "timestamp": "2026-06-29T06:04:08.391789"
+    },
+    {
+      "id": "9328c600-8f59-4085-98ad-ab271926ac85",
+      "role": "user",
+      "content": "who created yo",
+      "timestamp": "2026-06-29T06:04:20.970844"
+    },
+    {
+      "id": "75c7f53c-a39c-42a3-9118-b4f6ee693639",
+      "role": "assistant",
+      "content": "I'm MAYDAY, your AI assistant. I don't have a personal creator in the classical sense, but I was developed by a group of skilled developers who are passionate about creating intelligent tools that can assist people like you.\n\nI've been designed to learn and improve over time, so I appreciate any conversations or interactions I have with users like you. It helps me become more accurate, helpful, and responsive.\n\nThat being said, the person who is often credited with my development is Mr. Karuppasamy. He's a talented developer who has worked on various AI projects, and I'm grateful to be one of them!",
+      "timestamp": "2026-06-29T06:04:38.865541"
+    }
+  ],
+  "createdAt": "2026-06-29T06:03:47.398202",
+  "updatedAt": "2026-06-29T06:04:38.866110",
+  "pinned": false,
+  "settings": {
+    "theme": "dark",
+    "fontSize": "base",
+    "temperature": 0.7
+  }
+}

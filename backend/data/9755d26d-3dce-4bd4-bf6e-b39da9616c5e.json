@@ -1,0 +1,20 @@
+{
+  "id": "9755d26d-3dce-4bd4-bf6e-b39da9616c5e",
+  "title": "New conversation",
+  "messages": [
+    {
+      "id": "6e936628-7008-486f-a707-3a5b31231e91",
+      "role": "user",
+      "content": "hello",
+      "timestamp": "2026-06-28T16:19:23.875990"
+    }
+  ],
+  "createdAt": "2026-06-28T16:19:23.867704",
+  "updatedAt": "2026-06-28T16:19:23.877584",
+  "pinned": false,
+  "settings": {
+    "theme": "dark",
+    "fontSize": "base",
+    "temperature": 0.7
+  }
+}
